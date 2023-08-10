@@ -1,0 +1,14 @@
+:root {
+    --darker: rgb(127, 88, 176);
+    --medium: rgb(140, 96, 194);
+    --light: rgb(151, 104, 209);
+    --background: rgba(237, 153, 245, 0.4);
+}
+
+.text {
+    color: var(--medium);
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+}

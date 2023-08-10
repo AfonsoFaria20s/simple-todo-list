@@ -1,17 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import App from './components/App';
+import {COLORS} from "./values/colors"
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+const app = ReactDOM.createRoot(document.querySelector(".App"));
+
+let appStyle = {
+  width: "600px",
+  height: "fit-content",
+  margin: "30px auto",
+  borderRadius:"5px",
+  border: `2px solid ${COLORS.darker}`,
+  backgroundColor:COLORS.background,
+  padding:"20px"
+}
+
+app.render(
   <React.StrictMode>
-    <App />
+    <App style={appStyle}/>
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

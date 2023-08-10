@@ -1,0 +1,46 @@
+html,body {
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+:root {
+    --darker: rgb(127, 88, 176);
+    --medium: rgb(140, 96, 194);
+    --light: rgb(151, 104, 209);
+    --background: rgba(237, 153, 245, 0.4);
+}
+
+.task-box {
+    width: 70%;
+    height: fit-content;
+    min-height: 40px;
+    border: 1px solid;
+    border-color: var(--darker);
+    border-radius: 5px;
+    margin: 5px auto;
+    word-break: break-all;
+}
+
+.right {
+    position: relative;
+    float: right;
+}
+
+.task-box .material-symbols-outlined {
+    line-height: 40px;
+    cursor: pointer;
+    user-select: none;
+    margin-right: 10px;
+    color: var(--darker);
+    transition: .3s;
+}
+
+.task-box .material-symbols-outlined:hover{
+    font-size: 1.7rem;
+    transition: .3s;
+}
+
+.task-name {
+    line-height: 40px;
+    margin-left: 10px;
+    color: var(--medium);
+}
