@@ -59,10 +59,12 @@ function App(props) {
             completed: false,
         };
         setTodoList(task.taskName !== "" ? [...todoList, task] : todoList);
+        localStorage.setItem("tasks", JSON.stringify(todoList));
     }
 
     const handleRemoveTask = (id) => {
         setTodoList(todoList.filter((task) => task.id !== id));
+        localStorage.setItem("tasks", JSON.stringify(todoList))
     }
 
     return(

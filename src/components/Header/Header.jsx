@@ -1,7 +1,7 @@
+import { useState, useEffect } from "react";
 import "../../styles/Header.css"
 
 function Header(props) {
-    
     return(
         <div className="header-container">
             <h1 id="logo-title">To-Do List</h1>
